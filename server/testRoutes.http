@@ -1,0 +1,24 @@
+### first test server
+GET http://localhost:8000
+
+### SERVER TEST
+GET http://localhost:8000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTU0OTU2NjQsImV4cCI6MTU5NTU4MjA2NH0.bTyBP5GIUOdJgoPYcz4XgiotTNlKsBzNZBwmHUIC8GA
+
+###POST test route admin/register
+POST http://localhost:8000/admin/register
+Content-Type: application/json
+
+{
+    "username": "Cecyl",
+    "password": "1234"
+}
+
+###POST test route admin
+POST http://localhost:8000/admin
+Content-Type: application/json
+
+{
+    "username": "Cecyl",
+    "password": "1234"
+}
